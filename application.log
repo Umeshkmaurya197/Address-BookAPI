@@ -1,0 +1,64 @@
+2022-09-11 23:11:04 [INFO][restartedMain][c.g.a.a.AddressBookApplication:55] Starting AddressBookApplication using Java 18.0.2.1 on UmeshKMaurya with PID 11560 (D:\IDECode\intellij idea\address-book\target\classes started by umesh in D:\IDECode\intellij idea\address-book)
+2022-09-11 23:11:04 [INFO][restartedMain][c.g.a.a.AddressBookApplication:640] The following 1 profile is active: "dev"
+2022-09-11 23:11:04 [INFO][restartedMain][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-11 23:11:04 [INFO][restartedMain][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-11 23:11:05 [INFO][restartedMain][o.s.b.w.e.t.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2022-09-11 23:11:05 [INFO][restartedMain][o.a.c.c.StandardService:173] Starting service [Tomcat]
+2022-09-11 23:11:05 [INFO][restartedMain][o.a.c.c.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-11 23:11:05 [INFO][restartedMain][o.a.c.c.C.[.[.[/]:173] Initializing Spring embedded WebApplicationContext
+2022-09-11 23:11:05 [INFO][restartedMain][o.s.b.w.s.c.ServletWebServerApplicationContext:292] Root WebApplicationContext: initialization completed in 1107 ms
+2022-09-11 23:11:05 [WARN][restartedMain][o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'addressBookController': Unsatisfied dependency expressed through field 'contactServiceRepository'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'contactService': Unsatisfied dependency expressed through field 'contactRepository'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.git.addressbook.api.repository.ContactRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-09-11 23:11:05 [INFO][restartedMain][o.a.c.c.StandardService:173] Stopping service [Tomcat]
+2022-09-11 23:11:06 [INFO][restartedMain][o.s.b.a.l.ConditionEvaluationReportLoggingListener:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-09-11 23:11:06 [ERROR][restartedMain][o.s.b.d.LoggingFailureAnalysisReporter:40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field contactRepository in com.git.addressbook.api.service.ContactService required a bean of type 'com.git.addressbook.api.repository.ContactRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.git.addressbook.api.repository.ContactRepository' in your configuration.
+
+2022-09-11 23:15:03 [INFO][restartedMain][c.g.a.a.AddressBookApplication:55] Starting AddressBookApplication using Java 18.0.2.1 on UmeshKMaurya with PID 10352 (D:\IDECode\intellij idea\address-book\target\classes started by umesh in D:\IDECode\intellij idea\address-book)
+2022-09-11 23:15:03 [INFO][restartedMain][c.g.a.a.AddressBookApplication:640] The following 1 profile is active: "dev"
+2022-09-11 23:15:03 [INFO][restartedMain][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-09-11 23:15:03 [INFO][restartedMain][o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor:255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-09-11 23:15:04 [INFO][restartedMain][o.s.b.w.e.t.TomcatWebServer:108] Tomcat initialized with port(s): 8080 (http)
+2022-09-11 23:15:04 [INFO][restartedMain][o.a.c.c.StandardService:173] Starting service [Tomcat]
+2022-09-11 23:15:04 [INFO][restartedMain][o.a.c.c.StandardEngine:173] Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-09-11 23:15:04 [INFO][restartedMain][o.a.c.c.C.[.[.[/]:173] Initializing Spring embedded WebApplicationContext
+2022-09-11 23:15:04 [INFO][restartedMain][o.s.b.w.s.c.ServletWebServerApplicationContext:292] Root WebApplicationContext: initialization completed in 1112 ms
+2022-09-11 23:15:04 [WARN][restartedMain][o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext:591] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'addressBookController': Unsatisfied dependency expressed through field 'contactServiceRepository'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'contactService': Unsatisfied dependency expressed through field 'contactRepository'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.git.addressbook.api.repository.ContactRepository' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2022-09-11 23:15:04 [INFO][restartedMain][o.a.c.c.StandardService:173] Stopping service [Tomcat]
+2022-09-11 23:15:04 [INFO][restartedMain][o.s.b.a.l.ConditionEvaluationReportLoggingListener:136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-09-11 23:15:04 [ERROR][restartedMain][o.s.b.d.LoggingFailureAnalysisReporter:40] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field contactRepository in com.git.addressbook.api.service.ContactService required a bean of type 'com.git.addressbook.api.repository.ContactRepository' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.git.addressbook.api.repository.ContactRepository' in your configuration.
+
