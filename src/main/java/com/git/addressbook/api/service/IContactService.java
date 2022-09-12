@@ -10,13 +10,13 @@ public interface IContactService {
 
     Contact addContact(ContactDTO contactDTO);
 
-//    Optional<Contact> getContactById(Long contactId);
-//
-//    Optional<Contact> getContactByName(String contactName);
-//
-//    List<Contact> getAllContact();
-//
-//    Contact updateContact(Long contactId, ContactDTO contactDTO);
-//
-//    String deleteContactById(Long contactId);
+    Optional<Contact> getContactById(Long contactId);
+
+    List<Contact> getContactByName(String contactName);
+
+    List<Contact> getAllContact();
+
+    Contact updateContact(Long contactId, ContactDTO contactDTO);
+
+    String deleteContactById(Long contactId);
 }
