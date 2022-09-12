@@ -25,7 +25,6 @@ public class Contact {
     }
 
     public Contact(ContactDTO contactDTO) {
-        this.contactId = contactId;
         this.contactName = contactDTO.contactName;
         this.city = contactDTO.city;
         this.address = contactDTO.address;
