@@ -22,7 +22,7 @@ public class ContactService implements IContactService {
     public Contact addContact(ContactDTO contactDTO) {
         Contact contact = new Contact(contactDTO);
         contactRepository.save(contact);
-        emailService.sendMail(contactDTO.getEmail(), "Contact Created Successfully in address book ", "your Contact Now Saved in the AddressBook ");
+//        emailService.sendMail(contactDTO.getEmail(), "Contact Created Successfully in address book ", "your Contact Now Saved in the AddressBook ");
         return contact;
     }
 
@@ -34,10 +34,10 @@ public class ContactService implements IContactService {
     }
 
     @Override
-    public List<Contact> getContactByName(String contactName) {
-        List<Contact> contactList = contactRepository.findContactByName(contactName);
+    public List<Contact> getContactByName(String fullName) {
+        List<Contact> contactList = contactRepository.findContactByName(fullName);
         if (contactList.isEmpty()) {
-            throw new CustomException("Employee name " + contactName + " not found in list ");
+            throw new CustomException("Employee name " + fullName + " not found in list ");
         } else {
             return contactList;
         }

@@ -12,7 +12,7 @@ public interface IContactService {
 
     Optional<Contact> getContactById(Long contactId);
 
-    List<Contact> getContactByName(String contactName);
+    List<Contact> getContactByName(String fullName);
 
     List<Contact> getAllContact();
 

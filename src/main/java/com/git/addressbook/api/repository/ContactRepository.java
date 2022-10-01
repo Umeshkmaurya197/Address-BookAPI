@@ -10,6 +10,6 @@ import java.util.List;
 
 @Repository
 public interface ContactRepository extends JpaRepository<Contact, Long> {
-    @Query(value = "Select * from address_book.contact e where e.name =:contactName", nativeQuery = true)
-    List<Contact> findContactByName(@Param(value = "contactName") String contactName);
+    @Query(value = "Select * from address_book_1.contact e where e.full_name =:fullName", nativeQuery = true)
+    List<Contact> findContactByName(@Param(value = "fullName") String fullName);
 }

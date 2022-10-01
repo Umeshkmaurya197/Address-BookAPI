@@ -14,15 +14,22 @@ import javax.validation.constraints.Pattern;
 public class ContactDTO {
 
     @Pattern(regexp = "^[A-Z][a-zA-Z\\s]{2,}$", message = "Name should start with capital letter and have minimum 3 characters. ")
-    public String contactName;
-    public String city;
-    public String address;
+    public String fullName;
     public String phoneNumber;
-    @Email
-    public String email;
+    public String address;
+    public String city;
+    public String state;
+    public Integer zip;
 
     @Override
     public String toString() {
-        return "ContactDTO{" + "name='" + contactName + '\'' + ", city='" + city + '\'' + ", address='" + address + '\'' + ", phoneNumber='" + phoneNumber + '\'' + '}';
+        return "ContactDTO{" +
+                "fullName='" + fullName + '\'' +
+                ", phoneNumber='" + phoneNumber + '\'' +
+                ", address='" + address + '\'' +
+                ", city='" + city + '\'' +
+                ", state='" + state + '\'' +
+                ", zip=" + zip +
+                '}';
     }
 }

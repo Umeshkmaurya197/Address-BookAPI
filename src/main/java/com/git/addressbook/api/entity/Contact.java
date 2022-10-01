@@ -13,32 +13,33 @@ public class Contact {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "contact_id", nullable = false)
     private Long contactId;
-
-    private String contactName;
-    private String city;
-    private String address;
+    private String fullName;
     private String phoneNumber;
-
-    private String email;
+    private String address;
+    private String city;
+    private String state;
+    private Integer zip;
 
     public Contact() {
     }
 
     public Contact(ContactDTO contactDTO) {
-        this.contactName = contactDTO.contactName;
-        this.city = contactDTO.city;
-        this.address = contactDTO.address;
+        this.fullName = contactDTO.fullName;
         this.phoneNumber = contactDTO.phoneNumber;
-        this.email = contactDTO.email;
+        this.address = contactDTO.address;
+        this.city = contactDTO.city;
+        this.state = contactDTO.state;
+        this.zip = contactDTO.zip;
     }
 
-    public Contact(Long contactId, String contactName, String city, String address, String phoneNumber, String email) {
+    public Contact(Long contactId, String fullName, String phoneNumber, String address, String city, String state, Integer zip) {
         this.contactId = contactId;
-        this.contactName = contactName;
-        this.city = city;
-        this.address = address;
+        this.fullName = fullName;
         this.phoneNumber = phoneNumber;
-        this.email = email;
+        this.address = address;
+        this.city = city;
+        this.state = state;
+        this.zip = zip;
     }
 
     public Long getContactId() {
@@ -49,28 +50,12 @@ public class Contact {
         this.contactId = contactId;
     }
 
-    public String getContactName() {
-        return contactName;
+    public String getFullName() {
+        return fullName;
     }
 
-    public void setContactName(String contactName) {
-        this.contactName = contactName;
-    }
-
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
+    public void setFullName(String fullName) {
+        this.fullName = fullName;
     }
 
     public String getPhoneNumber() {
@@ -81,11 +66,35 @@ public class Contact {
         this.phoneNumber = phoneNumber;
     }
 
-    public String getEmail() {
-        return email;
+    public String getAddress() {
+        return address;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public Integer getZip() {
+        return zip;
+    }
+
+    public void setZip(Integer zip) {
+        this.zip = zip;
     }
 }
