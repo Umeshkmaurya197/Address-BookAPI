@@ -69,7 +69,7 @@ public class ContactService implements IContactService {
     @Override
     public String deleteContactById(Long contactId) {
         Optional<Contact> contact = contactRepository.findById(contactId);
-        if (contact.isPresent()) {
+        if (contact.isPresent()) { 
             contactRepository.deleteById(contactId);
             return "contact deleted Successfully";
         } else {
