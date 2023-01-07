@@ -22,3 +22,6 @@
 2022-10-13 20:01:53 [INFO][restartedMain][o.s.b.d.a.OptionalLiveReloadServer:59] LiveReload server is running on port 35729
 2022-10-13 20:01:53 [INFO][restartedMain][o.s.b.w.e.t.TomcatWebServer:220] Tomcat started on port(s): 8080 (http) with context path ''
 2022-10-13 20:01:53 [INFO][restartedMain][c.g.a.a.AddressBookApplication:61] Started AddressBookApplication in 6.052 seconds (JVM running for 6.66)
+2022-10-13 20:05:10 [INFO][SpringApplicationShutdownHook][o.s.o.j.LocalContainerEntityManagerFactoryBean:651] Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-10-13 20:05:10 [INFO][SpringApplicationShutdownHook][c.z.h.HikariDataSource:350] HikariPool-1 - Shutdown initiated...
+2022-10-13 20:05:10 [INFO][SpringApplicationShutdownHook][c.z.h.HikariDataSource:352] HikariPool-1 - Shutdown completed.
